@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Comic Sans Ms';
+    src: url('../comic_sans_ms.ttf');
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.citeHead {
+    background: rgba(38, 38, 38, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    flex-wrap: wrap;
+}
+
+.citeName, .contactButton {
+    margin: 30px 0;
+}
+
+.citeName {
+    font-family: 'Comic Sans Ms';
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+.navListItem {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.navListItem + .navListItem {
+    margin-left: 20px;
+}
+
+.contactButton {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 2px;
+    font-size: 0.8em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+@media (max-width: 380px) {
+    .citeHead {
+        padding: 0 20px;
+    }
+}
